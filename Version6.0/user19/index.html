@@ -57,7 +57,8 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a class="nav-item nav-link active"
+                        onclick="alert('Error! You are already on this page!');">Home</a>
                     <a href="previousWork.html" class="nav-item nav-link">Previous Work</a>
                     <a href="FAQ.html" class="nav-item nav-link">FAQ's</a>
                     <a href="contact.html" class="nav-item nav-link">Contact Information</a>
@@ -110,11 +111,6 @@
                     project.</td>
             </tr>
 
-
-
-
-
-
         </table>
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
@@ -136,12 +132,27 @@
                             <a href="FAQ.html" class="myButton">FAQ's</a>
                         </td>
                         <td>
-                            <a href="index.html" class="myButton">Home</a>
+                            <button href="index.html" class="myButton"
+                                onclick="alert('Error! You are already on this page!');">Home</button>
                         </td>
                     </tr>
                 </table>
     </footer>
     <!---------------------------------- End the footer ------------->
+    <script> type = "text/javascript" >
+
+
+            function hello() {
+                clicks += 1;
+                document.getElementById("clicks").innerHTML = clicks;
+            };
+        function makeAlert() {
+            alert("You have been playing for 10 minutes! You should take a break!");
+        };
+
+        setInterval(makeAlert, 100000);
+
+    </script>
 </body>
 
 </html>
