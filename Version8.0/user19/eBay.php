@@ -6,7 +6,7 @@ $endpoint = 'http://svcs.ebay.com/services/search/FindingService/v1';  // URL to
 $version = '1.0.0';  // API version supported by your application
 $appid = 'RobertMa-Shakopee-PRD-169ec6b8e-bb30ba02';  // Replace with your own AppID
 $globalid = 'EBAY-US';  // Global ID of the eBay site you want to search (e.g., EBAY-DE)
-$query = 'screwdrivers';  // You may want to supply your own query
+$query = 'fork';  // You may want to supply your own query
 $safequery = urlencode($query);  // Make the query URL-friendly
 $i = '0';  // Initialize the item filter index to 0
 // Create a PHP array of the item filters you want to use in your request
@@ -14,7 +14,7 @@ $filterarray =
     array(
         array(
             'name' => 'MaxPrice',
-            'value' => '25',
+            'value' => '9999999',
             'paramName' => 'Currency',
             'paramValue' => 'USD'
         ),
@@ -80,9 +80,15 @@ if ($resp->ack == "Success") {
         $pic   = $item->galleryURL;
         $link  = $item->viewItemURL;
         $title = $item->title;
+        $price = $item->sellingStatus->currentPrice;
         /////////////////////////EDIT THIS LINE/////////////////////////////////////////////////////
         // For each SearchResultItem node, build a link and append it to $results
-        $results .= "<tr><td><img src=\"$pic\"></td><td><a href=\"$link\">$title</a></td></tr>";
+        if ($i % 2 == 1) {
+            $results .= "<tr><td><img src=\"$pic\"></td><td>$price</td><td><a href=\"$link\">$title</a></td>";
+        } else {
+            $results .= "<td><img src=\"$pic\"></td><td>$price</td><td><a href=\"$link\">$title</a></td></tr>";
+        }
+        $i++;
         ////////////////////////EDIT THIS LINE//////////////////////////////////////////////////////      
     }
 }
