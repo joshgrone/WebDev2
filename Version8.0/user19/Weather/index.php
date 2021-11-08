@@ -48,11 +48,11 @@ $currentTime = time();
             margin: 0 auto;
             background-color: <?php
                                 if ($data->main->temp >= 50) {
-                                    echo "red";
+                                    echo "white";
                                 }
 
                                 if ($data->main->temp < 50) {
-                                    echo "blue";
+                                    echo "white";
                                 }
 
                                 ?>;
