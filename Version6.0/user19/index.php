@@ -32,6 +32,22 @@ $currentTime = time();
 
 <head>
     <title>Forecast Weather using OpenWeatherMap with PHP</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="WebDev Version 6.0">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="images/AEfavicon.ico" />
 
     <style>
         body {
@@ -78,8 +94,35 @@ $currentTime = time();
         .time {
             line-height: 25px;
         }
-    </style>
 
+        .menuNav {
+            padding: 0px 0px 0px 0px;
+           margin-top: 0px;
+        }
+    </style>
+    <menu class=menuNav>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand">Access Exteriors</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="previousWork.html" class="nav-item nav-link">Previous Work</a>
+                    <a href="FAQ.html" class="nav-item nav-link">FAQ's</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Information</a>
+                    <a href="http://localhost:8080/webdev2/Version6.0/user19/index.php" class="nav-item nav-link active" onclick="alert('Error! You are already on this page!');">Weather</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
 </head>
 
 <body>
@@ -102,5 +145,29 @@ $currentTime = time();
 
 
 </body>
+<footer>
+    <table id="hireButtons">
+        <table id="hireButtons">
+            <table id="footerTable">
+                <tr>
+
+                    <td>
+                        <a href="previousWork.html" class="myButton">Previous Work</a>
+                    </td>
+                    <td>
+                        <a href="contact.html" class="myButton">Contact Us</a>
+                    </td>
+                    <td>
+                        <a href="FAQ.html" class="myButton">FAQ's</a>
+                    </td>
+                    <td>
+                        <button href="index.html" class="myButton">Home</button>
+                    </td>
+                    <td>
+                        <button href="" class="myButton" onclick="alert('Error! You are already on this page!');">Weather</button>
+                    </td>
+                </tr>
+            </table>
+</footer>
 
 </html>

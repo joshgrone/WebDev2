@@ -100,7 +100,6 @@ $currentTime = time();
         </div>
     </div>
 
-
 </body>
 
 </html>
