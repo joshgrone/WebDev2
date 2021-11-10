@@ -97,7 +97,7 @@ $currentTime = time();
 
         .menuNav {
             padding: 0px 0px 0px 0px;
-           margin-top: 0px;
+            margin-top: 0px;
         }
     </style>
     <menu class=menuNav>
@@ -111,10 +111,11 @@ $currentTime = time();
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="previousWork.html" class="nav-item nav-link">Previous Work</a>
                     <a href="FAQ.html" class="nav-item nav-link">FAQ's</a>
+                    <a href="previousWork.html" class="nav-item nav-link">Previous Work</a>
                     <a href="contact.html" class="nav-item nav-link">Contact Information</a>
                     <a href="http://localhost:8080/webdev2/Version6.0/user19/index.php" class="nav-item nav-link active" onclick="alert('Error! You are already on this page!');">Weather</a>
+                    <a href="games.html" class="nav-item nav-link">Games</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -150,21 +151,23 @@ $currentTime = time();
         <table id="hireButtons">
             <table id="footerTable">
                 <tr>
-
                     <td>
-                        <a href="previousWork.html" class="myButton">Previous Work</a>
+                        <button href="index.html" class="myButton">Home</button>
                     </td>
                     <td>
-                        <a href="contact.html" class="myButton">Contact Us</a>
+                        <a href="previousWork.html" class="myButton">Previous Work</a>
                     </td>
                     <td>
                         <a href="FAQ.html" class="myButton">FAQ's</a>
                     </td>
                     <td>
-                        <button href="index.html" class="myButton">Home</button>
+                        <a href="contact.html" class="myButton">Contact Us</a>
                     </td>
                     <td>
-                        <button href="" class="myButton" onclick="alert('Error! You are already on this page!');">Weather</button>
+                        <button class="myButton" onclick="alert('Error! You are already on this page!');">Weather</button>
+                    </td>
+                    <td>
+                        <a href="games.html" class="myButton">Games</a>
                     </td>
                 </tr>
             </table>
